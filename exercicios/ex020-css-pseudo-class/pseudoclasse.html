@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>pseudoclasse.html - Pseudo-classes</title>
+        <style>
+            /*
+             NOTA-01
+             # = id
+             . = class
+             : = pseudo-class
+
+             NOTA-02
+             - As pseudo-class precisam estar ligadas a um elemento ou a uma classe e são relacionadas ao estado do elemento (ativo, ligado, checado, habilitado, etc.) 
+            
+             NOTA-03
+             - O sinal > (maior que) antes de um elemento significa que o elemento é filho da div (ex.: div > p - o elemento p é filho da div). 
+            */
+
+            div{
+                background-color: lightgray;
+                display: inline-block;
+                border: 1px solid black;
+                text-align:center ;
+                height: 200px;
+                width: 200px;
+          
+            }
+            /*Configuração do seletor div com a pseudo-class hover*/
+            div:hover{
+                background-color: yellow;
+
+            }
+            /*Configuração do seletor p filho do seletor div*/
+            div > p{
+                display: none;
+                font-size: 20px;
+                margin-left: 10px;
+            }
+            div:hover > p{
+                display: block;
+                color: white;
+                background-color: red;
+                width: 170px;
+                text-align: center;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div id="d1">01 - Passe o mouse 
+            <p>Texto escondido</p>
+        </div>
+        <div id="d2">02 - Passe o mouse </div>
+        <div id="d3">03 - Passe o mouse </div>
+    </body>
+</html>

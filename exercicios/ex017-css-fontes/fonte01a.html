@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>fonte01a.html - Fontes em CSS - font-family</title>
+
+        <style>
+            body{
+                /*
+                Nota-01: NOME DA FONTE - Quando o nome da fonte é composto é preciso coloca-lo entre aspas simples ou duplas ('Courier New'). 
+                */
+
+                 /*
+                 Nota-02: COMBINAÇÃO DE SEGURANÇA - Safe Combination (Combinação Segura) - Quando se digita Arial o CSS propõe também as fontes Helvetica e a categoria sans-serif, isso é feito para o caso do dipositivo não ter a primeira, então ele tenta a segunda e depois qualquer sans-serif que ele encontrar. 
+                 */
+
+                 /*
+                 Nota-03: CATEGORIA DA FONTE - Por segurança uma categoria de fonte deve sempre ser declarada após o nome da fonte, para o caso da fonte não ser encontrada: 
+                 - font-family: sans-serif; - será colocada a primeira fonte 'sem serifa' encontrada. 
+                 - font-family: serif; - será colocada a primeira fonte 'serifada' encontrada. 
+                 - font-family: monospace; - será colocada a primeira fonte 'monospace' encontrada. */ 
+
+                 
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: lighter;
+                font-weight: 400;
+                font-style: italic;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Trabalhando com fontes - font-family</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus error sunt, atque quod soluta similique deleniti voluptates vero, vel animi quaerat. Libero ducimus quas laboriosam animi? Consequuntur laborum incidunt odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sapiente nobis id iure vero adipisci in quam veniam veritatis cupiditate, rerum perspiciatis facilis nam aut ducimus odio eveniet? Dicta, repellat.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nihil omnis labore magni id dolore facilis quisquam, deleniti cum similique, perferendis reiciendis autem quo! Modi expedita magnam nam error sint!</p>
+        <hr>
+<!-----------------------------------------------------------------------------------> 
+
+        <h2>Subtítulo do exercício</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit porro maiores alias voluptate iusto quis neque, voluptatum eaque sapiente perferendis magni provident in explicabo voluptas veniam tenetur! Beatae, tempore quod.</p>
+        <hr>
+<!----------------------------------------------------------------------------------->
+    </body>
+</html>

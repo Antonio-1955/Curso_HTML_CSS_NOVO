@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* #C2DBEO #125189 #F1D8C9 #F2C3A7 #F39209 */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+   /*height: 100%; */   
+}
+
+
+BODY{
+    background-image: linear-gradient(to bottom,#ba6530,#F2C3A7,#eed173);
+}
+
+
+main{
+    background-image: linear-gradient(to bottom,#ba6530,#F2C3A7,#eed173);
+    
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(107, 87, 76, 0.619);
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1{
+    background-image: linear-gradient(to bottom,#ba6530,#e99967,#eed173); 
+    color: #373cd4;
+    text-align: center;
+    text-shadow: 1px 1px 2px #925806b7;
+    padding: 20px;
+    
+}
+
+
+h2{
+    
+  color: #125189;  
+}
+
+p{
+    text-align: justify;
+   
+}

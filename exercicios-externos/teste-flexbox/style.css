@@ -1,0 +1,120 @@
+
+/*Paleta de cores: #4485FA #3CA0DE #3CDEC4 #44FAAA #4EE1F5
+68
+133
+250
+98
+*/
+body, ul, li, p {
+    margin: 0px;
+    padding: opx;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none; 
+    color: white;
+}
+
+.subtitulos{
+    display: none;
+}
+
+.menu a:hover {
+    background-color: rgb(216, 196, 83);
+    color: black;
+    text-decoration: underline;
+    font-stretch: expanded;
+    font-weight: bold;
+    border-radius: 8px;
+    
+}
+
+.subtitulos a:hover{ /*Não funciona!?!*/
+    display: list-item;
+}
+
+h1{
+    text-align: center;
+    font-size: 80px;
+    color: rgb(153, 106, 5);
+    padding: 10px;
+    text-shadow: 1px 1px 5px #925806b7;
+    box-shadow: 1px 1px 5px rgb(175, 170, 170);
+    margin: 10px;
+    border-radius: 10px;
+}
+.cabecalho{
+    background-image: linear-gradient(to bottom, #473b02, #b1ab74);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    margin-left: 10px;
+}
+.menu li a{
+    display: inline-block;
+    padding: 10px;
+    color: white;
+}
+.obras{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: linear-gradient(to bottom, #af851c, #fbfcfd);
+    border-radius: 8px;
+  
+    margin: 10px;
+}
+.obrasbasicas > h2{
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+}
+.obrasbasicas h2 > p{
+    background-color: white;
+    height: 140px;
+    width: 400px;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: justify;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 1px 1px 5px rgb(175, 170, 170);
+}
+
+.obrassuporte > h2{
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+}
+.obrassuporte > h2 > p{
+    background-color: white;
+    height: 140px;
+    width: 400px;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: justify;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 1px 1px 5px rgb(175, 170, 170);
+}

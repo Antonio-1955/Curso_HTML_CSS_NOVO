@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte envelopado com a tag-code as letras ficam mono-espaçadas</h2>
+    <p>O comando "<code>document.getElementById('teste')</code>" é escrito em linguagem JavaScript</p>
+    <hr>
+    <h3>Abaixo um código em linguagem PYTON sem usar a tag-pre aparece em uma única linha</h3>
+    <code>
+        
+        num = int(input('Digite um número: '))
+        if num % 2 == 0:
+            print(f'O número {num} é par.)
+        else:
+            print(f'O número {num} é ÍMPAR.)
+    </code>
+    <h3>O mesmo código envelopado pela tag-pre aparece conforme digitado e indentado</h3>
+    <code>
+        <pre>
+    num = int(input('Digite um número: '))
+    if num % 2 == 0:
+        print(f'O número {num} é par.)
+    else:
+        print(f'O número {num} é ÍMPAR.)
+        </pre>
+    </code>
+        <hr>
+        <h2>Citações simples com a tag-q de 'quote' insere as aspas duplas
+
+        </h2>
+        <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido.</q></p>
+        <hr>
+        <h2>Citações de bloco de linhas com a tag-blockquote aparecem tabuladas em relação ao restante do texto</h2>
+        <p>Segundo Jeff Noble, no seu livro HTML para leigos:</p>
+        <blockquote cite="https://www.amazon.com.br/HTML-XHTML-CSS-para-leigos/dp/8576086972/ref=asc_df_8576086972/?tag=googleshopp00-20&linkCode=df0&hvadid=379765802639&hvpos=&hvnetw=g&hvrand=7666142091973349841&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1031726&hvtargid=pla-811121404721&psc=1">
+            A diferença entre elementos e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+        </blockquote>
+        <p>O texto dentro do parâmetro 'cite' na tag-blockquote <em>(não é visível no site)</em>, serve apenas para mostrar no código html a origem da citação.</p>
+        <hr>
+        <h2>Abreviações</h2>
+        <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+        <hr>
+        <h2>Texto invertido</h2>
+        <p>Inverte um texto da esquerta para a direita com a tag-bdo dir="rtl".</p>
+        <p><bdo dir="rtl">Inverte um texto da esquerta para a direita com a tag-bdo.</bdo></p>
+        
+
+    
+</body>
+</html>

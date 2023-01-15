@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>caixa01.html - Modelo de Caixas</title>
+        <style>
+            
+            h1{
+                background-color: lightgray;
+                height: 300px;
+                width: 300px;
+
+                /*Comandos border múltiplos SEM Shorthand 
+                border-width: 10px;
+                border-style: solid;
+                border-color: brown;
+                */ 
+
+                /*Comando border simplificado COM Shorthand */  
+                border: 10px solid brown;
+
+                /*Comando padding múltiplos SEM Shorthand
+                padding-top: 20px;
+                padding-right: 20px;
+                padding-bottom: 20px;
+                padding-left: 20px;
+                */
+
+                /*Comando padding simplificado COM Shorthan  
+                padding: 20px 20px 20px 20px;*/
+
+                /*margin: auto; - Posiciona o elemento no centro*/
+
+                /*Comandos margin múltiplos SEM Shorthand
+                margin-top: 30px;
+                margin-right: 30px;
+                margin-bottom: 30px;
+                margin-left: 30px;
+                */
+
+                /*Comando padding simplificado COM Shorthan 
+                margin: 30px auto 30px auto; - Centraliza o elemento*/ 
+
+                /*Comando padding e margin simplificado quando as medidas são iguais*/ 
+                padding: 20px;
+                margin: 30px;
+
+                /*Comando outline múltiplos SEM simplificação
+                outline-width: 5px;
+                outline-style: dashed;
+                outline-color: blue;*/
+
+                 /*Comando outline simplificado COM Shorthand */
+                outline: 5px dashed blue;
+                
+            }
+
+            h1 > p{
+                font-size: 18px;
+                font-weight: lighter;
+            }
+            a{
+                border-width: 10px;
+                border-style: solid;
+                border-color: aqua;
+                padding-top: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exemplo de caixa box-level
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquam tempore necessitatibus tenetur consectetur aperiam doloremque vitae, harum quo libero sequi sunt, quaerat minus amet enim? Nostrum error dolore delectus.</p>
+        </h1>
+        <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+    </body>
+</html>

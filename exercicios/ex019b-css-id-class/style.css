@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/*Style.css*/
+/*
+NOTA-01 - ID NO CSS
+- O 'id' do HTML no CSS é o sinal #.
+- Quando se tem o nome do 'id' no HTML não é preciso  especificar o seletor 'h1', basta o # + o nome do id.
+
+NOTA-02 - CLASS NO CSS
+- A 'class' do HTML no CSS é o ponto '.'
+- Quando se tem o nome da 'class' no HTML não é preciso  especificar o seletor 'h1', basta o ponto + o nome da class.
+*/
+body{
+    background-color: #a7d4f5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Abaixo o seletor h1 id personalizado*/
+#principal{ 
+    text-align: center;
+    background-image: linear-gradient(to bottom, #a7d4f5, rgb(3, 29, 112));
+    color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 5px 5px 15px rgba(107, 87, 76, 0.619);
+}
+h1{
+    color: blue;
+}
+
+h2{
+    color: rgb(88, 88, 231);
+}
+
+/*Abaixo os seletores h2 class personalizado*/
+.basico{
+    color: blueviolet;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 25px;
+}
+.intermediario{
+    color: rgba(147, 136, 6, 0.63);
+}
+.avancado{
+    color: rgb(154, 8, 8);
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 25px;
+}
+.destaque{
+    background-color: rgba(137, 43, 226, 0.274);
+    border-radius: 10px;
+    padding: 10px;
+    font-style: oblique;
+    font-stretch: ultra-condensed;
+    
+}

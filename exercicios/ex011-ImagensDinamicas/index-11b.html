@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>index-11b.html-Mídias em HTML5</title>
+    </head>
+ <!--====================================================================================-->
+    <body>
+        <h1>Reproduzindo Áudio</h1>
+        <p>Vamos aprender a reproduzir áudio em HTML5</p>
+        <hr>
+        <p>SOLUÇÃO-1: Usando somente a tag &lt;audio&gt; com o atributo src"" incluso.</p> 
+        
+        <p>(Cancele o comentário da linha de código abaixo para reproduzir o áudio em automático)</p>
+
+        <!-- <audio src="midia/happy-mistake.mp3" controls autoplay></audio>
+        <audio src="midia/good-morning-Reed Mathis.mp3" autoplay controls></audio>-->
+        <hr>
+<!--====================================================================================-->
+
+        <p> SOLUÇÃO-2: Usando somente a tag &lt;audio&gt; com o atributo src"" separado na parte interna.</p> 
+
+        <p> Outro modo de exibir áudios é detalhando o atributo source para o caso do navegador do usuário não ser compatível com algum formato de áudio. Primeiro vai tentar carregar o mp3, depois o ogg e por último o wav: </p> 
+
+        <p>mp3 = mpeg - Formato com ótima compressão - Arquivos pequenos boa qualidade, são ideais para navegação</p> 
+
+        <p>ogg = ogg - Formato com ótima compressão - Arquivos pequenos - boa qualidade, são ideais para navegação</p> 
+
+        <p>wav = wav - Formato com baixa compressão - Arquivos muito grandes de excelente qualidade, mas ruim para navegação - </p>
+        <hr>
+
+        <!-- A opção abaixo vai reproduzir o áudio em automático-->
+         <!--<audio preload="auto" autoplay controls> loop--> 
+        
+        <!-- A opção abaixo vai reproduzir o áudio manual-->    
+        <audio preload="" controls>
+            <!-- -->
+            <source src="midia/good-morning-Reed Mathis.mp3" type="audio/mpeg">
+            <source src="midia/happy-mistake.ogg" type="audio/ogg"> 
+            <source src="midia/we-wish-you-a-merry-christmas-dj-williams.wav" type="audio/wav">
+
+            <p>Infelizmente seu navegador não consegue reproduzir o áudio
+                <a href="midia/happy-mistake.mp3">Clique aqui para baixar o arquivo MP3</a>
+            </p>
+            
+        </audio>
+ 
+    </body>
+</html>

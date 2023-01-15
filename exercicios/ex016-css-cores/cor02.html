@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>cor02.html - Gradiente em CSS</title>
+        <style>
+            
+            *{/* - O seletor das configurações globais das CSS é o sinal de asterico*/
+                height: 100%;
+            }
+            body {
+                /* - A função interna 'linear-gradient() do 'background-image, que define a direção e as cores do gradiente (direção, cor1, cor2, ...), pode ser especificada de 03 modos: 
+
+                -TEXTO:
+                 -linear-gradient(to right, cor1,cor2, ...)
+                 -linear-gradient(to left, cor1,cor2, ...)-linear-gradient(to top, cor1,cor2, ...)-linear-gradient(to bottom, cor1,cor2, ...)- 
+
+                -GRAUS:
+                -linear-gradient(90deg, cor1, cor2, ...) pode ser qualquer ângulo.
+
+                - RADIANO - muda a função interna:
+                 -radial-gradient(circle, cor1, cor2, ...)'.
+
+                - Nas direções de cima para baixo e de baixo para cima, é preciso que as configurações globais das CSS - (seletor *{}), estejam definidas em 100%* para que o gradiente seja aplido uniformemente pela tela.
+
+                - Após o código da cor pode ser especificado o percentual que a cor vai ocupar*/
+
+                background-image:linear-gradient(to right, #009AFF, #F0630B,#387307);
+
+                /*background-image:radial-gradient(circle, #009AFF, #E4D6B9,#B9D6FF);*/
+
+                
+                background-attachment: fixed;/*Serve para fixar o gradiente quando rolamos a tela*/
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Testando Gradiente</h1>
+
+    </body>
+</html>

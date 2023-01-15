@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>caixa03.html - Borda com imagem</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: rgb(187, 182, 182);
+               
+            }
+            h1{
+                border: 20px solid transparent;
+                padding: 10px;
+
+                /*Borda feita com uma imagem*/ 
+                /*;*/border-image-source: url('borda2.png');
+                border-image-slice: 31;
+                border-image-repeat: repeat
+                
+                /*Borda feita com uma imagem usando o shorthand 
+                border-image: url('borda2.png') 31 repeat;*/
+            }
+            header{
+                background-color: white;
+                padding: 15px;
+                margin: 30px;
+                border-radius: 10px;
+                box-shadow: 3px 3px 3px 1px rgba(13, 14, 13, 0.295);
+            }
+            nav {
+                background-color: lightgray;
+                padding: 15px;
+                border-radius: 5px;
+            }
+            nav > a{
+                background-color: brown;
+                padding: 6px;
+                color: white;
+                text-decoration: none;
+                margin: 0px;
+                border-radius: 5px;
+                box-shadow: 2px 2px 2px 1px rgba(13, 14, 13, 0.295);
+            }
+            nav > a:hover{
+                background-color: white;
+                color: brown;
+                text-decoration: underline;
+                font-stretch: expanded;
+                font-weight: bold;
+                
+            }
+           
+
+        </style>
+    </head>
+    <body>
+       <header>
+            <h1>Meu site</h1>
+            <nav>
+                <a href="#">Novo </a>
+                <a href="#">Adicionar </a>
+                <a href="#">Alterar </a>
+                <a href="#">Pesquisar </a>
+                <a href="#">Sobre </a>
+            </nav>
+       </header>
+       
+    </body>
+</html>
