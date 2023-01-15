@@ -9,19 +9,27 @@
         <style>
             body{
                 height: 100vh;
-                background-color: rgb(25, 1, 243);
+                 /* background-color: rgb(25, 1, 243);
                 background-image: url('imagens/wallpaper002.jpg');
                 background-position: center center;
                 background-repeat: no-repeat;
-                /*background-size: 100% 100%;
-                background-size: contain;*/
+                background-size: auto;
+                background-size: 100% 100%;
+                background-size: contain;
                 background-size: cover;  
-                background-size: auto;  
+                background-attachment: fixed;*/
+
+                /*Shorthand (forma abreviada) de background
+                ordem das declarações: color > image > position > repeat > [size] > attachment
+                Embora a especificação do W3C inclua o 'size', por enquanto não está funcionando para Shorthand de background. */
+                background: rgb(25, 1, 243) url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+                background-size: cover;
+                 
             }
 
             main{
                 background-color: white;
-                width: 400px;
+                max-width: 400px;
                 padding: 20px;
                 margin: auto;
                 text-align: justify;
@@ -33,6 +41,10 @@
     <body>
         <main>
             <h1>Teste Imagem de Fundo</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa suscipit dignissimos deserunt alias perferendis ullam explicabo non quam quasi consequatur incidunt, delectus, sunt aperiam ratione iste minus maxime placeat modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, at dolores, ut quo incidunt eaque a deleniti aliquam ad assumenda voluptatem consequuntur voluptatum quaerat? Quas possimus voluptatem modi pariatur id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora voluptate modi inventore obcaecati veniam ad nihil, at quam ipsum explicabo! Necessitatibus ratione neque facilis ea quaerat est asperiores temporibus sunt?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa suscipit dignissimos deserunt alias perferendis ullam explicabo non quam quasi consequatur incidunt, delectus, sunt aperiam ratione iste minus maxime placeat modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, at dolores, ut quo incidunt eaque a deleniti aliquam ad assumenda voluptatem consequuntur voluptatum quaerat? Quas possimus voluptatem modi pariatur id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora voluptate modi inventore obcaecati veniam ad nihil, at quam ipsum explicabo! Necessitatibus ratione neque facilis ea quaerat est asperiores temporibus sunt?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa suscipit dignissimos deserunt alias perferendis ullam explicabo non quam quasi consequatur incidunt, delectus, sunt aperiam ratione iste minus maxime placeat modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, at dolores, ut quo incidunt eaque a deleniti aliquam ad assumenda voluptatem consequuntur voluptatum quaerat? Quas possimus voluptatem modi pariatur id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora voluptate modi inventore obcaecati veniam ad nihil, at quam ipsum explicabo! Necessitatibus ratione neque facilis ea quaerat est asperiores temporibus sunt?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa suscipit dignissimos deserunt alias perferendis ullam explicabo non quam quasi consequatur incidunt, delectus, sunt aperiam ratione iste minus maxime placeat modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, at dolores, ut quo incidunt eaque a deleniti aliquam ad assumenda voluptatem consequuntur voluptatum quaerat? Quas possimus voluptatem modi pariatur id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora voluptate modi inventore obcaecati veniam ad nihil, at quam ipsum explicabo! Necessitatibus ratione neque facilis ea quaerat est asperiores temporibus sunt?</p>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa suscipit dignissimos deserunt alias perferendis ullam explicabo non quam quasi consequatur incidunt, delectus, sunt aperiam ratione iste minus maxime placeat modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, at dolores, ut quo incidunt eaque a deleniti aliquam ad assumenda voluptatem consequuntur voluptatum quaerat? Quas possimus voluptatem modi pariatur id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora voluptate modi inventore obcaecati veniam ad nihil, at quam ipsum explicabo! Necessitatibus ratione neque facilis ea quaerat est asperiores temporibus sunt?</p>
         </main>
     </body>
