@@ -38,6 +38,7 @@
            article#conteudo{
             background-image: url('imagens/target001.png');
             background-size: 100% 100%;
+            border-radius: 20px;
             height: 200px;
             width: 400px;
             background-color: yellow;
@@ -53,6 +54,7 @@
                 margin-top: 10px;
                 background-size: cover;
                 background-color: rgb(218, 240, 240);
+                box-shadow: 2px 2px 10px rgb(0, 0, 0);
                 position: absolute;
                 height: 600px;
                 width: 200px;
@@ -69,15 +71,18 @@
                 text-shadow: 1px 1px 2px #000000b7;
 
             }
+            article#conteudo p{
+                font-size: 1.2em;
+            }
         </style>
     </head>
     <body>
        <section id="container">
             <header>
-                <h1>Biblioteca Compartilhada</h1>
+                <h1>Teste Centralização de Caixas com CSS</h1>
             </header>
             <article id="conteudo">
-                
+                <p>Observe que esta caixa está centralizado bem no centro.</p>
             </article>
             <article id="conteudo-2">
                 <h2>N o t í c i a s</h2>
