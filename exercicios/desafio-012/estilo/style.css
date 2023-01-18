@@ -63,7 +63,7 @@ section.imagem{
     color: white;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.514);
     background-size: cover;
-    background-attachment: fixed; /*Cria o efeito Parallax fixando a imagem enquando o texto se move.*/
+    background-attachment: fixed; /*Cria o efeito Parallax (desvio, distorção, provável deslocamento) fixando a imagem enquando o texto se move.*/
 }
 section.imagem > p{
     display: inline-block; /*Adapta a caixa ao tamanho do conteúdo fica melhor que o width: 400px;*/
