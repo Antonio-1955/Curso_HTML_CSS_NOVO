@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela002 - Tabelas Grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative; /*A tabela precisa ter um posicionamento relativo para fixar o cabeçaçho*/
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: green;
+            padding: 10px;
+            color: white;
+            font-stretch: condensed;
+            position: sticky; /*Junto com o top:0 abaixo, fixa o cabeçalho na parte superior*/
+            top: 0;
+        }
+        thead, tfoot{
+            background-color: rgb(161, 218, 123);
+            color: black;
+        }
+        thead > tr > th{ /*O th que está dentro do tr e que dentro do thead*/
+            position: sticky; /*Junto com o top:50 abaixo, fixa os rótulos das colunas na parte superior abaixo do cabeçalho*/
+            top: 40;
+            background-color: rgb(161, 218, 123);
+        }
+        /*EFEITO ZEBRADO - Pseudo-classe nth-child(valor)*/
+        tbody > tr:nth-child(odd){ /*odd (impar) ou 2n-1*/
+            background-color: lightblue;
+        }
+        tbody > tr:nth-child(even){ /*even (par) ou 2n*/
+            background-color: rgb(192, 192, 233);
+            font-style: italic;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        td.num{
+            text-align: right;
+        }
+        th.total{
+            text-align: left;
+        }
+        section{
+            width: 500px;
+            text-align: justify;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Usando Tabelas Grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        table
+            caption
+            thead
+                tr, td, th
+            tbody
+                tr, td, th
+            tfoot
+                tr, td, th
+       
+    -->
+    
+    <table>
+        <caption>População das Unidades Federativas do Brasil</caption>
+        <thead>
+            <tr>
+                <th scope="col" >Estado</th>
+                <th scope="col" style="width: 90px;">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">41 262 199</td>
+                
+            </tr>
+            <tr>
+                
+                <td>Minas Gerais</td>
+                <td class="num">19 597 330</td>
+            </tr>
+            <tr>
+                
+                <td>Rio de Janeiro</td>
+                <td class="num">15 989 929</td>
+            </tr>
+
+
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 016 906</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">10 444 526</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 693 929</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">8 796 448</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 452 381</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">7 581 051</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">6 248 436</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">6 003 788</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6 574 789</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">3 514 952</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">3 766 528</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">3 483 985</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3 035 122</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3 168 027</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3 118 360</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3 120 494</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">2 923 369</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2 449 024</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2 068 017</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1 562 409</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1 383 445</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">733 559</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">669 526</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">450 479</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="col" class="total">Total de Habitantes</th>
+                <td class="num"><strong>191 109 008</strong></td>
+            </tr>
+        </tfoot>
+        
+    </table>
+    <section>
+    <!--Os parágrafos abaixo servem apenas para mostrar que a fixação do cabeçalho vai rolar pra cima qdo a tabela terminar de rolar.-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente labore unde soluta provident. Possimus, voluptatum. Praesentium reprehenderit excepturi nemo, amet alias temporibus atque aperiam facere. Perspiciatis dolorum a temporibus aperiam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente labore unde soluta provident. Possimus, voluptatum. Praesentium reprehenderit excepturi nemo, amet alias temporibus atque aperiam facere. Perspiciatis dolorum a temporibus aperiam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente labore unde soluta provident. Possimus, voluptatum. Praesentium reprehenderit excepturi nemo, amet alias temporibus atque aperiam facere. Perspiciatis dolorum a temporibus aperiam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente labore unde soluta provident. Possimus, voluptatum. Praesentium reprehenderit excepturi nemo, amet alias temporibus atque aperiam facere. Perspiciatis dolorum a temporibus aperiam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente labore unde soluta provident. Possimus, voluptatum. Praesentium reprehenderit excepturi nemo, amet alias temporibus atque aperiam facere. Perspiciatis dolorum a temporibus aperiam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente labore unde soluta provident. Possimus, voluptatum. Praesentium reprehenderit excepturi nemo, amet alias temporibus atque aperiam facere. Perspiciatis dolorum a temporibus aperiam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente labore unde soluta provident. Possimus, voluptatum. Praesentium reprehenderit excepturi nemo, amet alias temporibus atque aperiam facere. Perspiciatis dolorum a temporibus aperiam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente labore unde soluta provident. Possimus, voluptatum. Praesentium reprehenderit excepturi nemo, amet alias temporibus atque aperiam facere. Perspiciatis dolorum a temporibus aperiam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente labore unde soluta provident. Possimus, voluptatum. Praesentium reprehenderit excepturi nemo, amet alias temporibus atque aperiam facere. Perspiciatis dolorum a temporibus aperiam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente labore unde soluta provident. Possimus, voluptatum. Praesentium reprehenderit excepturi nemo, amet alias temporibus atque aperiam facere. Perspiciatis dolorum a temporibus aperiam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente labore unde soluta provident. Possimus, voluptatum. Praesentium reprehenderit excepturi nemo, amet alias temporibus atque aperiam facere. Perspiciatis dolorum a temporibus aperiam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente labore unde soluta provident. Possimus, voluptatum. Praesentium reprehenderit excepturi nemo, amet alias temporibus atque aperiam facere. Perspiciatis dolorum a temporibus aperiam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente labore unde soluta provident. Possimus, voluptatum. Praesentium reprehenderit excepturi nemo, amet alias temporibus atque aperiam facere. Perspiciatis dolorum a temporibus aperiam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente labore unde soluta provident. Possimus, voluptatum. Praesentium reprehenderit excepturi nemo, amet alias temporibus atque aperiam facere. Perspiciatis dolorum a temporibus aperiam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente labore unde soluta provident. Possimus, voluptatum. Praesentium reprehenderit excepturi nemo, amet alias temporibus atque aperiam facere. Perspiciatis dolorum a temporibus aperiam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente labore unde soluta provident. Possimus, voluptatum. Praesentium reprehenderit excepturi nemo, amet alias temporibus atque aperiam facere. Perspiciatis dolorum a temporibus aperiam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente labore unde soluta provident. Possimus, voluptatum. Praesentium reprehenderit excepturi nemo, amet alias temporibus atque aperiam facere. Perspiciatis dolorum a temporibus aperiam.</p>
+</section>
+</body>
+</html>
