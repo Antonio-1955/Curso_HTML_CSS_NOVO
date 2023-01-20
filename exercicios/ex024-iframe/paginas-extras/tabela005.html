@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela005 - Agrupando Colunas</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 750px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            border: 1px solid black;
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 8px;
+        }
+
+        tr > th{
+            border: 1px solid black;
+            padding: 10px; 
+        }
+
+        tr > td{
+            border: 1px solid black;
+            padding: 10px; 
+        }
+
+        tr.destaque{
+            background-color: greenyellow;
+        }
+
+        col.colnome{
+            background-color: pink;
+        }
+        
+        col.colsexo{
+            background-color: rgb(160, 223, 219);
+        }
+
+        col.colidade{
+            background-color: rgb(240, 241, 170);
+        }
+
+        col.colprof{
+            background-color: rgb(222, 188, 238);
+        }
+
+        col.colgrupo{
+            background-color: rgb(211, 236, 211);
+        }
+    </style>
+</head>
+<body>
+    <h1>Agrupando Colunas com a tag colgroup</h1>
+
+    <table>
+        <colgroup>
+            <col class="colnome">
+            <col class="colsexo">
+            <col class="colidade">
+            <col class="colprof">
+            <col class="colgrupo" span="3">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+            <th scope="col">Endereço</th>
+            <th scope="col">Telefone</th>
+            <th scope="col">Formação</th>
+        </tr>
+
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+            <td>Rua 1</td>
+            <td>1111-1111</td>
+            <td>Superior</td>
+        </tr>
+
+        <tr>
+            <td>Cláudio</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Programador</td>
+            <td>Rua 2</td>
+            <td>2222-2222</td>
+            <td>Ensino médio</td>
+        </tr>
+
+        <tr class="destaque">
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Professor</td>
+            <td>Rua 3</td>
+            <td>3333-1111</td>
+            <td>Mestrado</td>
+        </tr>
+
+        <tr>
+            <td>Hélio</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Vendedor</td>
+            <td>Rua 4</td>
+            <td>4444-1111</td>
+            <td>Fundamental</td>
+        </tr>
+
+        <tr class="destaque">
+            <td>Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Médica</td>
+            <td>Rua 5</td>
+            <td>5555-1111</td>
+            <td>Doutorado</td>
+        </tr>
+
+        <tr>
+            <td>Otávio</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Nutricionista</td>
+            <td>Rua 6</td>
+            <td>6666-1111</td>
+            <td>Superior</td>
+        </tr>
+
+    </table>
+    
+</body>
+</html>
