@@ -16,13 +16,24 @@
     <h1>Meu primeiro formulário</h1>
 
     <!--O atributo 'name' é mais útil para HTML e PHP.
-        O atributo 'id' é mais útil para JavaScript e uso do lable.
-        A tag 'label' é necessária e serve ligar o controle caixa de texto input ao próprio nome.-->
-    <form action="cadastro.php" autocomplete="on">
-    <p><label for="idnome">Nome:</label> <input type="text" name="nome" id="idnome"></p>
+        O atributo 'id' é mais útil para JavaScript e uso do label.
+        A tag 'label' é necessária e serve ligar o controle caixa de texto input ao próprio nome.
+        Existem 02 métodos para envio de formulários:
+        - method="get" - este é o padrão para envio de dados NÃO sensiveis (cartão crédito, endereços, contas bancárias, etc.), os dados digitados aparecem na url. Só se pode enviar até 3000bytes, ou seja, cerca de 3000 letras compreendendo todo o formulário e os dados.
+        - method="post" - este é mais seguro, os dados digitados não aparecem na url, porém não é uma criptografia, pra isso é preciso aprender https. Serve p/ enviar dados sensíveis, fotos ou qualquer outro tipo de arquivo-->
+    <form action="cadastro.php" method="POST" autocomplete="on">
+    <p>
+        <label for="idnome">Nome:</label> 
+        <input type="text" name="nome" id="idnome">
+    </p>
 
-    <p><label for="idsobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="idsobrenome"></p>
-    <p><input type="submit" value="Enviar"></p>
+    <p>
+        <label for="idsobrenome">Sobrenome:</label> 
+        <input type="text" name="sobrenome" id="idsobrenome">
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+    </p>
     </form>
 </body>
 </html>
