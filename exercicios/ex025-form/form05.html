@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form05-Formulário</title>
+
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        fieldset{
+            background-color: rgba(245, 216, 243, 0.445);
+            width: 450px;
+        }
+
+        legend{
+            font-weight: bolder;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <h2>Atributos das caixas</h2>
+
+    <form action="cadastro.php" method="get">
+        <fieldset> <!--Botões de rádio - dentro do mesmo grupo têm de ter o mesmo 'name'.-->
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imas" value="M"><label for="imas">Masculino</label> <br>
+            <input type="radio" name="sexo" id="ifem" value="F"><label for="ifem">Feminino</label>
+        </fieldset>
+        <br>
+        <fieldset> <!--Checkbox.-->
+            <legend>Esportes Favoritos</legend>
+
+            <input type="checkbox" name="fut" id="ifut"><label for="ifut">Futebol</label> <br>
+            <input type="checkbox" name="bas" id="ibas"><label for="ibas">Basquete</label> <br>
+            <input type="checkbox" name="nat" id="inat"><label for="inat">Natação</label> <br>
+            <input type="checkbox" name="ten" id="iten"><label for="iten">Tênis</label> <br>
+                      
+        </fieldset>
+         <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+         </p>
+    </form>
+    <!---->
+    
+</body>
+</html>
