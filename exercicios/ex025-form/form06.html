@@ -10,8 +10,20 @@
         *{
             font-family: Arial, Helvetica, sans-serif;
         }
+        div{
+            display: inline-block;
+            margin-top: 0px;
+            background-color: rgb(231, 199, 199);
+            padding: 20px;
+            margin-right: 30px;
+            border: 1px solid black;
+            height: 350px;
+            width: 500px;
+        }
 
         fieldset{
+            margin: 0px;
+            padding: 0px 10px 0px 10px;
             background-color: rgba(228, 221, 121, 0.445);
             width: 450px;
         }
@@ -23,32 +35,47 @@
     </style>
 </head>
 <body>
-    <h1>Exemplo de formulário</h1>
-    <h2>Atributos das caixas</h2>
-    <form action="cadastro.php" method="post" autocomplete="on">
-        <fieldset> <!--Checkbox.-->
-            <legend>Cor - Nível - Arquivo</legend>
-            <p>
-                <label for="icor">Cor:</label>
-                <input type="color" name="cor" id="icor" value="#00ff00">
-            </p>
-            <p>
-                <label for="inivel">Nível de Satisfação</label>
-                <input type="range" name="nivel" id="inivel" min="1" max="10" value="10">
-            </p>
-            <p>
-                <label for="ifoto">Foto de Perfil</label>
-                <input type="file" name="foto" id="ifoto">
-            </p>
-    
-            <p>
 
-        </fieldset><br>
+        <div id="d1">
+            <h1>Exemplo de formulário</h1>
+            <h2>Atributos das caixas</h2>
+            <form action="cadastro.php" method="post" autocomplete="on">
+             
+                    <fieldset> <!--Checkbox.-->
+                    <legend>Cor - Nível - Arquivo</legend>
+                    <p>
+                        <label for="icor">Cor:</label>
+                        <input type="color" name="cor" id="icor" value="#00ff00">
+                    </p>
+                    <p>
+                        <label for="inivel">Nível de Satisfação</label>
+                        <input type="range" name="nivel" id="inivel" min="1" max="10" value="10">
+                    </p>
+
+                    <p>
+                        <label for="ifoto">Foto de Perfil</label>
+                        <input type="file" name="foto" id="ifoto">
+                    </p>
+
+                </fieldset><br>
+            
+                
+            </form>
+
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Limpar">
+
+
+        </div>
+        <div id="d2">
+            <h1>div2</h1>
+            <h2> - Lateral -</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, earum tempore quas est deleniti quisquam amet accusantium. Animi nam accusamus illo cupiditate quo distinctio sapiente amet laborum voluptatibus! Quae, quas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere dolor accusantium fugit! In sunt, delectus culpa consectetur,   
+
             </p>
-        
-    </form>
-    <!---->
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, atque error. Porro, assumenda accusantium voluptatem cupiditate debitis, harum laboriosam dignissimos molestias vero rerum perferendis unde beatae. Esse aspernatur fuga molestias.</p>
+        </div>
+
+
 </body>
 </html>
