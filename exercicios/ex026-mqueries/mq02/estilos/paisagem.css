@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/*Estilo para tela em modo paisagem*/
+
+/*Configurações gerais*/
+
+body{
+    background: url(../imagens/cev-landscape.jpg);
+    background-position: left bottom;
+}
