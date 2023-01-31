@@ -11,7 +11,7 @@
 Impressão----------------------------------------------*/
 
 @media screen and (min-width: 768px) {
-    span#burguer{
+    span#menu-burguer{
         display: none;
     }
     menu{
@@ -24,9 +24,10 @@ Impressão----------------------------------------------*/
     }
     main{
         width: 800px;
+
     }
     article{
         column-count: 2;
-        column-gap: 3rem;
+        column-gap: 1rem;
     }
 }

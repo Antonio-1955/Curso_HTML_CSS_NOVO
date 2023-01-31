@@ -21,17 +21,18 @@ header > h1{
     text-align: center;
 }
 
-span#burguer{
+span#menu-burguer{
     background-color: rgb(133, 130, 130);
-   display: block; /*ou width: 100vw;*/
+    display: block; /*ou width: 100vw;*/
     text-align: center;
     padding: 10px;
     cursor: pointer;
 }
 
-span#burguer:hover{
-    background-color: white;
-    color: red;
+span#menu-burguer:hover{
+    background-color: rgb(190, 125, 4);
+    color: white;
+    font-weight: bolder;
 }
 
 menu{
@@ -66,13 +67,20 @@ main{
     border-radius: 10px;
 }
 
-article>h2{
-    padding-bottom: 20px;
+article>h1{
+    color: rgb(123, 75, 236);
+    text-align: center;
+    padding: 10px;
+    text-shadow: 1px 1px 5px rgb(85, 98, 156);
+}
+article, h4, h3{
+    padding: 10px;
+    text-align: center;
 }
 
 article>p{
-    font-size: 1.5em;
-    text-align: justify;
+    font-size: 1.4em;
+    text-align: left;
     margin-bottom: 20px;
     text-indent: 20px;
     margin-left: 20px;
