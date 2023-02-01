@@ -11,7 +11,7 @@
 html{
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.5em;
-    line-height: 1.5em;
+    line-height: 1.2em;
 }
 
 menu{
@@ -23,6 +23,8 @@ article{
     text-align: justify;
 }
 
-article::after{
+article::after{ 
+    font-size: .7em; 
+    font-style: italic; 
     content: '(Artigo impresso através do curso HTMLS-CSS)';
 }
