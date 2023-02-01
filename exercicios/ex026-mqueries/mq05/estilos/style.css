@@ -68,10 +68,10 @@ main{
 }
 
 article>h1{
-    color: rgb(123, 75, 236);
+    color: rgb(187, 147, 18);
     text-align: center;
     padding: 10px;
-    text-shadow: 1px 1px 5px rgb(85, 98, 156);
+    text-shadow: 1px 1px 5px rgb(235, 211, 80);
 }
 article, h4, h3{
     padding: 10px;
