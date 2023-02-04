@@ -37,11 +37,12 @@ a {
 }
 
 h1{
+    font-family: 'Tangerine', serif;
+    font-size: 110px;
     text-align: center;
-    font-size: 80px;
-    color: rgb(153, 106, 5);
+    color:blue;
     padding: 10px;
-    text-shadow: 1px 1px 5px #925806b7;
+    text-shadow: 1px 1px 5px #57770bb7;
     box-shadow: 1px 1px 5px rgb(175, 170, 170);
     margin: 10px;
     border-radius: 10px;
