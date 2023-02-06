@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Flexbox align 0 — starting code</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        width: 70%;
+        max-width: 960px;
+        margin: 20px auto;
+      }
+
+      div {
+        height: 100px;
+        border: 1px solid black; 
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      button {
+        font-size: 18px;
+        line-height: 1.5;
+        width: 17%;
+      }
+
+      /*button:first-child{
+        align-self: flex-end;}*/
+
+      button:first-child{
+        order: 1;
+      }  
+      
+
+
+      /* Add your flexbox CSS below here */
+
+      
+    </style>
+  </head>
+  <body>  
+    <h1>Alinhamento Horizontal e Vertical</h1>
+    <div>
+    
+      <button>Smile <br> (Sorriso)</button>
+      <button>Laugh <br> (Rir)</button>
+      <button>Wink <br> (Piscar)</button>
+      <button>Shrug <br>(Dar de ombros</button>
+      <button>Blush <br>(Corar)</button>
+    </div>
+  </body>
+</html>
