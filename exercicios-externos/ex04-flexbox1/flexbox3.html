@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox</title>
+    <title>Flexbox - Usando o wrap</title>
 
     <style>
         /*Reset*/
@@ -14,32 +14,66 @@
             box-sizing: border-box;
         }
 
+        h1{
+            text-align: center;
+            padding: 20px;
+        }
+
         div.flex-container{
             
             display: flex; /*O display: flex;, por padrão acrescenta em automático as propriedades: flex-direction: row; justify-content: flex-start; align-items: stretch;*/
 
-            flex-direction: row; /*Eixo principal que pode ser horizontal (row) ou vertical (column). O atributo 'row' posiciona os elementos um ao lado do outro no eixo horizontal. O 'column posiciona os elementos um sobre o outro no eixo vertical. O 'row-reverso' invert a posição dos elementos de trás pra frente*/
-
             justify-content: space-between; /*Posiciona os elementos no eixo principal - inicio(start ou flex-start)  - centro(center) - fim(end ou flex-end) - distribuido com margem no início/fim(space-around) - distribuido sem margem no início/fim do container (space-between).*/
 
-            align-items: flex; /*Posiciona os elementos no eixo perpendicular ao principal*/
+            flex-wrap: wrap;
+
+            align-items: flex-start; /*Posiciona os elementos no eixo perpendicular ao principal*/
+
+            align-content: center; /*Posiciona todo p conteúdo no eixo perpendicular ao principal*/
 
             background-color: rgb(171, 171, 154);
-            height: 500px;
+            height: 640px;
+
         
             /*gap: 30px; Adiciona um espaço entre os elementos*/
         }
 
         div.flex-item{
-            width: 100%;
+            width: 33.33%;
             color: white;
             background-color: rgb(0, 21, 255);
-            margin: 10px;
+
         }
     </style>
 </head>
 <body>
+    <h1>Usando o align-content: center;</h1>
     <div class="flex-container">
+        
+        <div class="flex-item">Um</div>
+        <div class="flex-item">Dois</div>
+        <div class="flex-item">Três</div>
+        <div class="flex-item">Quatro</div>
+        <div class="flex-item">Cinco</div>
+
+        <div class="flex-item">Um</div>
+        <div class="flex-item">Dois</div>
+        <div class="flex-item">Três</div>
+        <div class="flex-item">Quatro</div>
+        <div class="flex-item">Cinco</div>
+
+        <div class="flex-item">Um</div>
+        <div class="flex-item">Dois</div>
+        <div class="flex-item">Três</div>
+        <div class="flex-item">Quatro</div>
+        <div class="flex-item">Cinco</div>
+
+        <div class="flex-item">Um</div>
+        <div class="flex-item">Dois</div>
+        <div class="flex-item">Três</div>
+        <div class="flex-item">Quatro</div>
+        <div class="flex-item">Cinco</div>
+
         <div class="flex-item">Um</div>
         <div class="flex-item">Dois</div>
         <div class="flex-item">Três</div>
