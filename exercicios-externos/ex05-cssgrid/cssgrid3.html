@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid CSS - Display grid</title>
+    <style>
+        /*https://www.youtube.com/watch?v=O6XsN0UxDHY
+        HTML e CSS - Layout com Container e Display Grid*/
+        *{
+            margin: 0px;
+            padding: 0;
+            border-radius: 0.3em;
+            box-sizing: border-box;
+        }
+
+        section{
+            display: grid;
+            height: ;
+            grid-template-columns: 0.5fr 1fr 1fr 1fr;
+            
+            /*grid-template-areas: "nav nav nav nav" "sidebar main main main" "sidebar conteudo1 conteudo2 conteudo3" "sidebar footer footer footer";*/
+            grid-template-areas: "header header header header" "aside main main main" "aside conteudo1 conteudo2 conteudo3" "aside footer footer footer";
+            grid-gap: 0.3em;
+            margin: 3px 3px;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-weight: 800;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            height: 150px;
+            background-image: linear-gradient(to right, rgb(144, 211, 226), rgb(240, 237, 159) );
+            grid-area: header;
+
+           
+        }
+        figure img{
+            display: flex;
+            width: 150px;
+            padding: 10px;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+        }
+        nav a{
+            background-color: rgb(9, 115, 134);
+            width: 95px;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin-right: 30px;
+            border: 30px;
+        }
+
+        nav a:hover{
+            background-color: rgb(185, 245, 144);
+            text-decoration: underline;
+            color: rgb(11, 134, 9);
+        }
+
+        main{
+            display: grid;
+            grid-template-rows: repeat(20, 1fr);
+            background-color: rgb(233, 233, 165);
+            grid-area: main;
+        }
+        aside{
+            background-color: lightpink;
+            grid-area:aside;
+
+        }
+        article{
+            display: grid;
+            grid-template-rows: repeat(10, 1fr);
+        }
+        #conteudo1{
+            grid-area:conteudo1;
+            background-color: lightgreen;
+        }
+        #conteudo2{
+            grid-area:conteudo2;
+            background-color: rgb(102, 238, 102);
+        }
+        #conteudo3{
+             grid-area:conteudo3; 
+             background-color: rgb(25, 225, 25);
+        }
+        footer{
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            background-color: lightgray;
+            grid-area:footer;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <figure>
+                <img src="imagens/Firefox_brand_logo,_2019.svg.png" alt="">
+            </figure>
+            
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Produtos</a>
+                <a href="#">Parceiros</a>
+                <a href="#">Contato</a>
+            </nav>
+        </header>
+        
+        <main>Principal</main>
+
+        <aside>
+            <h2>Barra lateral</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptatibus odit suscipit ut cumque tenetur corrupti itaque rem voluptates rerum hic sunt pariatur dignissimos ipsam voluptas, harum dolorum beatae voluptatem!
+
+            </p>
+        </aside>
+
+        <article id="conteudo1">Conteúdo 1</article>
+        <article id="conteudo2">Conteúdo 2</article>
+        <article id="conteudo3">Conteúdo 3</article>
+
+        <footer>Rodapé</footer>
+       
+    </section>
+    <div class="container">
+        
+    </div>
+</body>
+</html>
