@@ -15,28 +15,28 @@
 
       header {
         background: purple;
-        height: 100px;
+        height: auto;
+        color: white;  text-align: center; 
       }
-
-      h1 {
-        text-align: center;
-        color: white;
-        line-height: 100px;
-        margin: 0;
+      h1{
+        padding-top: 10px;
+      }
+      p{
+        padding-bottom: 10px;
       }
 
       section {
         display: flex;
         /* flex-direction: row;
         flex-wrap: wrap; */
-        flex-flow: row wrap; /*Esta propriedade é a forma abreviada para flex-direction: row; e flex-wrap: wrap;*/
+        flex-flow: row wrap; /*Esta propriedade é a forma abreviada para flex-direction: row; e flex-wrap: wrap; e cria o efeito responsivo*/
 
       }
       
       article {
         padding: 10px;
         margin: 10px;
-        background: aqua;
+        background: rgb(217, 205, 223);
         flex: 200px;
       }
 
@@ -47,6 +47,8 @@
   <body>
     <header>
       <h1>Layout Flexbox Responsivo com wrap </h1>
+      <p>Este arquivo é uma cópia do flexbox5.html</p>
+
     </header>
 
     <section>
