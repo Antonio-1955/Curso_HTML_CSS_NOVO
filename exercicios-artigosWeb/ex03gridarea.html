@@ -11,10 +11,10 @@
             main.page {
                 display: grid;
                 grid-template-areas: 
-                "header" 
-                "content" 
-                "sidebar"
-                "footer";
+                "cabecalho" 
+                "conteudo" 
+                "bLateral"
+                "rodape";
                 min-height: 100vh;
                 grid-template-rows: auto 5fr 2fr auto;
                 grid-template-columns: 1fr;
@@ -24,61 +24,48 @@
             main.page {
                 display: grid;
                 grid-template-areas:
-                    "header  header"
-                    "content sidebar"
-                    "footer footer";
+                    "cabecalho  cabecalho"
+                    "conteudo bLateral"
+                    "rodape rodape";
                 /*  "footer ."; O ponto (.) cria uma área em branco no rodapé. */
                 min-height: 100vh;
                 grid-template-rows: auto 1fr auto;
                 grid-template-columns: 4fr 2fr;
             }
        }
-      /* @media screen and (min-width: 900px) {  
-            main.page {
-                display: grid;
-                grid-template-areas:
-                    "header  header"
-                    "content sidebar"
-                    "footer footer";
-                  "footer ."; O ponto (.) cria uma área em branco no rodapé. 
-                min-height: 100vh;
-                grid-template-rows: auto 1fr auto;
-                grid-template-columns: 3fr 1fr;
-            }
-       }*/
-     
 
-        header.header{
-            grid-area: header;
+        header.cabecalho{
+            grid-area: cabecalho;
             background: #0088ff;
         }
 
-        article.content{
-            grid-area: content;
+        article.conteudo{
+            grid-area: conteudo;
             background: #6bc9bb;
         }
 
-        aside.sidebar{
-            grid-area: sidebar;
+        aside.bLateral{
+            grid-area: bLateral;
             background: #edeea6;
         }
 
-        footer.footer{
-            grid-area: footer;
+        footer.rodape{
+            grid-area: rodape;
             background: #ff802e;
         }
-        .header, .content, .sidebar, .footer{
+        .cabecalho, .conteudo, .bLateral, .rodape{
             padding: 10px;
             font-size: 1.5rem;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
     <main class="page">
-        <header class="header">Cabeçalho</header>
-        <aside class="sidebar">Barra lateral</aside>
-        <article class="content">Conteúdo</article>
-        <footer class="footer">Rodapé</footer>
+        <header class="cabecalho">Cabeçalho</header>
+        <aside class="bLateral">Barra lateral</aside>
+        <article class="conteudo">Conteúdo</article>
+        <footer class="rodape">Rodapé</footer>
     </main>
 </body>
 </html>
