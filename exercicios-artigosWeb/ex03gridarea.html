@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Área</title>
+    <style>
+        /*@media screen and (orientation: portrait) {*/
+        @media screen and (min-width: 0px) and (max-width: 768px) {
+            main.page {
+                display: grid;
+                grid-template-areas: 
+                "header" 
+                "content" 
+                "sidebar"
+                "footer";
+                min-height: 100vh;
+                grid-template-rows: auto 5fr 2fr auto;
+                grid-template-columns: 1fr;
+            }
+        }
+        @media screen and (min-width: 768px) {  
+            main.page {
+                display: grid;
+                grid-template-areas:
+                    "header  header"
+                    "content sidebar"
+                    "footer footer";
+                /*  "footer ."; O ponto (.) cria uma área em branco no rodapé. */
+                min-height: 100vh;
+                grid-template-rows: auto 1fr auto;
+                grid-template-columns: 4fr 2fr;
+            }
+       }
+      /* @media screen and (min-width: 900px) {  
+            main.page {
+                display: grid;
+                grid-template-areas:
+                    "header  header"
+                    "content sidebar"
+                    "footer footer";
+                  "footer ."; O ponto (.) cria uma área em branco no rodapé. 
+                min-height: 100vh;
+                grid-template-rows: auto 1fr auto;
+                grid-template-columns: 3fr 1fr;
+            }
+       }*/
+     
+
+        header.header{
+            grid-area: header;
+            background: #0088ff;
+        }
+
+        article.content{
+            grid-area: content;
+            background: #6bc9bb;
+        }
+
+        aside.sidebar{
+            grid-area: sidebar;
+            background: #edeea6;
+        }
+
+        footer.footer{
+            grid-area: footer;
+            background: #ff802e;
+        }
+        .header, .content, .sidebar, .footer{
+            padding: 10px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <main class="page">
+        <header class="header">Cabeçalho</header>
+        <aside class="sidebar">Barra lateral</aside>
+        <article class="content">Conteúdo</article>
+        <footer class="footer">Rodapé</footer>
+    </main>
+</body>
+</html>
