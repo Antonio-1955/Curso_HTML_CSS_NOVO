@@ -3,15 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-.grid{
+.grade{
     padding: 15px;
 }
-.grid::after{ /*Elimina o espaço vazio após a div.grid. Deste modo não é presico usar o clear: both; no parágrafo.*/
+.grade::after{ /*Elimina o espaço vazio após a div.grid. Deste modo não é presico usar o clear: both; no parágrafo.*/
     content: '';
     display: block;
     clear: both;
 }
-.grid .col{ /*Por padrão as divs têm display: block*/
+.grade .col{ /*Por padrão as divs têm display: block*/
     /*display: inline-block; O display: inline-block deixa as divs flutuando uma ao lado da outra com uma margem automática de 2px (p/ tirar essa margem entre com margin: -2px), porém ficam em bloco qdo a tela reduz.*/
     width: 33.33%;
     height: 300px;
@@ -22,14 +22,8 @@
     /* margin: 20px;
     float: right;*/
 }
-.grid .col-conteudo{
+.grade .col-conteudo{
     width: 100%;
     height: 100%;
     background-color: red;
-}
-p{
-    /*clear: both;
-    clear: left;
-    clear: right;
-    */
 }
