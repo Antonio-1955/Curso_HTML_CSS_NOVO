@@ -1,3 +1,4 @@
+@charset "UTF-8";
 
 /*Paleta de cores: #4485FA #3CA0DE #3CDEC4 #44FAAA #4EE1F5
 68
@@ -5,12 +6,48 @@
 250
 98
 */
+
+
 body, ul, li, p {
     margin: 0px;
     padding: opx;
     list-style: none;
     font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
+}
+main.principal{
+    display: flex;
+    grid-template-areas: 
+    "header header header"
+    "menu menu menu"
+    "obras obras obras";
+    min-height: 100vh;
+    grid-template-rows: 1fr 1fr auto;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+h1{
+    background-image: linear-gradient(to bottom, #eadf69, #eae8d5);
+    font-family: 'Tangerine', serif;
+    font-size: 110px;
+    text-align: center;
+    color:blue;
+    padding: 10px;
+    text-shadow: 1px 1px 5px #57770bb7;
+    box-shadow: 1px 1px 5px rgb(175, 170, 170);
+    margin: 10px;
+    border-radius: 10px;
+}
+.cabecalho{
+    grid-area: header;
+    background-image: linear-gradient(to bottom, #473b02, #b1ab74);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
 }
 
 a {
@@ -36,35 +73,13 @@ a {
     display: list-item;
 }
 
-h1{
-    font-family: 'Tangerine', serif;
-    font-size: 110px;
-    text-align: center;
-    color:blue;
-    padding: 10px;
-    text-shadow: 1px 1px 5px #57770bb7;
-    box-shadow: 1px 1px 5px rgb(175, 170, 170);
-    margin: 10px;
-    border-radius: 10px;
-}
-.cabecalho{
-    background-image: linear-gradient(to bottom, #473b02, #b1ab74);
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-}
-.menu{
+ul.menu{
     display: flex;
 }
-.menu li{
+ul.menu li{
     margin-left: 10px;
 }
-.menu li a{
+ul.menu li a{
     display: inline-block;
     padding: 10px;
     color: white;
@@ -75,7 +90,6 @@ h1{
     justify-content: space-around;
     background-image: linear-gradient(to bottom, #af851c, #fbfcfd);
     border-radius: 8px;
-  
     margin: 10px;
 }
 .obrasbasicas > h2{
