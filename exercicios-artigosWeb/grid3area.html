@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Grid Área - Responsiva</title>
+    <title>grid3area.html - Responsiva</title>
     <style>
         /*@media screen and (orientation: portrait) {*/
         @media screen and (min-width: 0px) and (max-width: 768px) {
             main.page {
                 display: grid;
                 grid-template-areas: 
-                "cabecalho" 
+                "titulo" 
                 "conteudo" 
                 "bLateral"
                 "rodape";
@@ -23,26 +23,25 @@
         @media screen and (min-width: 768px) {  
             main.page {
                 display: grid;
-                    /*grid-template-areas:
-                        "cabecalho cabecalho"
+                    grid-template-areas:
+                        "titulo titulo"
                         "conteudo bLateral"
                         "rodape rodape";
-                        "rodape ."; O ponto (.) cria uma área em branco no rodapé. 
+                        /*"rodape ."; O ponto (.) cria uma área em branco no rodapé.   */
                     grid-template-rows: auto 1fr auto;
-                    grid-template-columns: 4fr 2fr;*/
+                    grid-template-columns: 4fr 2fr;
 
                 /*Atalho p/ grid-template-areas*/
-                 grid-template:
-                    "cabecalho  cabecalho" auto /*Altura linha-1 = auto*/
-                    "conteudo bLateral" 1fr /*Altura linha-2 = 1fr*/
-                    "rodape  rodape" auto / 4fr 2fr; /*Altura linha-3 = auto, depois da barra (/) Vem a largura da coluna-1 = 4fr, coluna-2 = 2fr*/
-               
-                min-height: 100vh;
+                 /*grid-template:  */
+                    /*"titulo  titulo" auto  */ /*Altura linha-1 = auto*/
+                    /*"conteudo bLateral" 1fr  */ /*Altura linha-2 = 1fr*/
+                    /*"rodape  rodape" auto / 4fr 2fr;  */ /*Altura linha-3 = auto, depois da barra (/) Vem a largura da coluna-1 = 4fr, coluna-2 = 2fr*/
+                    min-height: 100vh;
             }
        }
 
-        header.cabecalho{
-            grid-area: cabecalho;
+        header.titulo{
+            grid-area: titulo;
             background: #0088ff;
         }
 
@@ -60,12 +59,12 @@
             grid-area: rodape;
             background: #ff802e;
         }
-        .cabecalho, .conteudo, .bLateral, .rodape{
+        .titulo, .conteudo, .bLateral, .rodape{
             padding: 10px;
             font-size: 1.5rem;
             border-radius: 10px;
         }
-        .popup { /*Cria uma camada sobre todos os elementos.*/
+        /* .popup {Cria uma camada sobre todos os elementos.
             grid-column-start: conteudo-start;
             grid-column-end: bLateral-end;
             grid-row-start: conteudo-start;
@@ -77,12 +76,12 @@
             font-size: 1.5rem;
             background: #f4020262; /*Retire a transparência p/ ver a cor.*/
             border-radius: 10px;
-        }
+        }*/
     </style>
 </head>
 <body>
     <main class="page">
-        <header class="cabecalho">Cabeçalho</header>
+        <header class="titulo">Cabeçalho</header>
         <aside class="bLateral">Barra lateral</aside>
         <article class="conteudo">Conteúdo</article>
         <footer class="rodape">Rodapé</footer>

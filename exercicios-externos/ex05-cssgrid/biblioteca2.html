@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Tangerine">
+    <title>biblioteca2.html</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0px;
+            margin: 0px;
+        }
+        main.page{
+            display: grid;
+            grid-template-areas: 
+            "titulo titulo titulo"
+            "navegacao navegacao navegacao"
+            "obras obras obras"
+            "rodape rodape rodape";
+            grid-template-rows: 250px 80px 650px auto;
+            grid-template-columns: 4fr 2fr 2fr;
+            min-height: 100vh;
+        }
+        header.titulo{
+            grid-area: titulo;
+            padding: 0px; 
+            background-image: linear-gradient(to bottom, #eadf69, #eae8d5);
+            border-radius: 10px;
+        }
+        h1{
+            font-family: 'Tangerine', serif;
+            font-size: 150px;
+            text-align: center;
+            color:rgb(109, 115, 234);
+            padding: 10px 0px;
+            text-shadow: 3px 3px 15px #18b4d3b7;
+
+          
+        }
+        h3{
+            color: blue;
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: 15px;
+        }
+        header.navegacao{
+            grid-area: navegacao;
+            background-image: linear-gradient(to bottom, #473b02, #b1ab74);
+            color: white;
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+        
+            margin: 0px;
+            border-radius: 10px;
+        }
+        .navegacao a {
+            text-decoration: none; 
+        }
+        .navegacao a:hover{
+            background-color: rgb(216, 196, 83);
+            color: black;
+            text-decoration: underline;
+            font-stretch: expanded;
+            font-size: 1.3em;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        ul.menu{
+            display: flex;
+        }
+
+        ul.menu, li, a{
+            display: inline-block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        ul.menu a:hover {
+            background-color: rgb(216, 196, 83);
+            color: black;
+            text-decoration: underline;
+            font-size: 1.2em;
+            border-radius: 8px;
+    
+        }
+
+        article.obras{
+            grid-area: obras;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-image: linear-gradient(to bottom, #af851c, #fbfcfd);
+            border-radius: 8px;
+        } 
+        
+        .subtitulos{
+             display: none;
+        }
+
+        .titulo, .navegacao, .obras, .rodape{
+            padding: 10px;
+            border-radius: 10px;
+        }
+       
+        .obras > h2{
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px;
+            color: rgb(40, 118, 228);
+        }
+    
+        .obras > p{
+            background-color: white;
+            height: 140px;
+            width: 400px;
+            font-style: normal;
+            font-weight: lighter;
+            font-size: 18px;
+            padding: 10px;
+            margin-top: 10px;
+            text-align: justify;
+            border-radius: 10px;
+            color: black;
+            box-shadow: 1px 1px 5px rgb(175, 170, 170);
+        }
+        footer.rodape{
+            grid-area: rodape;
+            background-color: white;
+        }
+        .rodape > p{
+            color: blue;
+            text-align: left;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="page">
+        <header class="titulo">
+            <h1>Biblioteca Geeb</h1>
+            <h3>GEEB - Grupo Espírita Eurípedes Barsanulfo</h3>
+        </header>
+        <header class="navegacao">
+            <a href="#">Cadastro de LIVROS</a>
+            <ul class="menu">
+                <li><a href="#">Obras básicas</a></li>
+                <li><a href="#">Doutrinários</a></li>
+                <li><a href="#">Mediúnicos</a></li>
+                <li><a href="#">Romance</a></li>
+                <li><a href="#">Infanto-Juvenil</a></li>
+                <li><a href="#">Outros</a></li>
+            </ul>
+        </header>
+        <article class="obras">
+            <div class="obras">
+                <h2>Obras Básicas - Allan Kardec </h2>
+                   <p>Primeiro, leia as obras básicas do Espiritismo para compreender o sentido da vida: de onde viemos, porque estamos aqui e para onde vamos.
+                   Entenda a necessidade de fazer sempre o bem como foi ensinado por Jesus Cristo o Mestre que Deus nos deu como modelo e guia. 
+                   </p>
+              
+           </div>
+          
+   
+           <div class="obras">
+               <h2>Obras de André Luis</h2>
+                   <p>As obras de suporte, escritas por André Luiz e psicografadas pelo nosso querido Chico Xavier, nos dá um panorama geral do mundo Espiritual físico  e da condição dos espíritos nos diversos planos vibratórios.</p>
+               
+           </div>  
+           <div class="obras">
+               <h2>Romance Espírita</h2>
+                   <p>As obras de suporte, escritas por André Luiz e psicografadas pelo nosso querido Chico Xavier, nos dá um panorama geral do mundo Espiritual físico  e da condição dos espíritos nos diversos planos vibratórios.</p>
+               
+           </div>  
+
+        </article>
+        <footer class="rodape">
+            <p>Site construído por: Antônio G. Campos</p>
+        </footer>
+    </main>
+</body>
+</html>
