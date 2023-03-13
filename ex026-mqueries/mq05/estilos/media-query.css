@@ -19,8 +19,8 @@ Impressão----------------------------------------------*/
     }
     menu > ul > li{
         display: inline-block;
-        padding: 10px;
-        width: 150px;
+        padding: 5px;
+        width: 100px;
     }
     main{
         width: 800px;
